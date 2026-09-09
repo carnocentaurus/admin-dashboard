@@ -43,11 +43,25 @@ header {
 }
 
 .search-input {
+    font-size: 0.9rem;
+    color: #dbe2e9;
     background-color: #544e48;
     border-radius: 30px;
     border: none;
     width: 80%;
     height: 25px;
+    padding: 0 12px;
+    overflow-x: scroll;
+}
+
+.search-input:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.search-input:hover {
+    cursor: pointer;
+    background-color: #666a6d;
 }
 
 .bell-icon, .dashboard-icons {
