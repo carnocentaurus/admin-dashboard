@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid #000; */
 }
 
 body {
@@ -25,9 +26,31 @@ header {
     grid-area: 1 / 2 / 2 / 3;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+
+    height: 150px;
+    padding: 20px 30px;
+    gap: 30px;
 }
 
-.search-icon, .bell-icon, .dashboard-icons {
+.search-div {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.search-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.search-input {
+    background-color: #544e48;
+    border-radius: 30px;
+    border: none;
+    width: 80%;
+    height: 25px;
+}
+
+.bell-icon, .dashboard-icons {
     width: 20px;
 }
 
