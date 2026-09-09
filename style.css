@@ -9,6 +9,9 @@
 
 * {
     font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -44,6 +47,18 @@ header {
 
 .my-profile-image.big-image {
     width: 30px;
+}
+
+.greetings-div {
+    display: grid;
+    grid-area: 2 / 1 / 3 / 2;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.greetings-text-div {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 3;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .dashboard {
