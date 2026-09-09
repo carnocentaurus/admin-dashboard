@@ -7,12 +7,19 @@
     font-display: swap;
 }
 
+:root {
+    --dark-taupe-filter: brightness(0) saturate(100%) invert(29%) sepia(10%) saturate(509%) 
+        hue-rotate(349deg) brightness(91%) contrast(84%);
+    --dark-taupe-color: #544e48;
+    --near-dark: #181514;
+}
+
 * {
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid #000; */
+    /* border: 1px solid #000;  */
 }
 
 body {
@@ -37,9 +44,9 @@ header {
     gap: 10px;
 }
 
-.search-icon {
-    filter: brightness(0) saturate(100%) invert(29%) sepia(10%) saturate(509%) 
-        hue-rotate(349deg) brightness(91%) contrast(84%);
+.search-icon,
+.bell-icon {
+    filter: var(--dark-taupe-filter);
     width: 25px;
     height: 25px;
 }
@@ -47,7 +54,7 @@ header {
 .search-input {
     font-size: 0.9rem;
     color: #dbe2e9;
-    background-color: #544e48;
+    background-color: var(--dark-taupe-color);
     border-radius: 30px;
     border: none;
     width: 80%;
@@ -74,18 +81,30 @@ header {
     display: grid;
     grid-area: 1 / 2 / 2 / 3;
     grid-template-columns: repeat(3, 1fr);
+    align-content: start;
+    align-items: center;
+
+    padding: 0 50px;
 }
 
 .my-profile-image {
     border-radius: 50%;
 }
 
-.my-profile-image.small-image, .user-profile-image {
-    width: 20px;
+.my-profile-image.small-image {
+    width: 30px;
 }
 
 .my-profile-image.big-image {
     width: 30px;
+}
+
+.my-username {
+    color: var(--near-dark);
+}
+
+.my-username.small-username {
+    font-size: 1rem;
 }
 
 .greetings-div {
@@ -135,4 +154,8 @@ main {
     grid-area: 2 / 2 / 3 / 3;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+}
+
+.user-profile-image {
+    width: 20px;
 }
