@@ -28,6 +28,12 @@ header {
     width: 20px;
 }
 
+.profile-div {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 3;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .my-profile-image {
     border-radius: 50%;
 }
