@@ -96,27 +96,34 @@ header {
 }
 
 .my-profile-image.big-image {
-    width: 30px;
+    width: 50px;
 }
 
-.my-username {
+.my-username,
+.hi-there-text {
     color: var(--near-dark);
+}
+
+.hi-there-text {
+    font-size: 0.9rem;
 }
 
 .my-username.small-username {
     font-size: 1rem;
 }
 
+.my-username.big-username {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 .greetings-div {
     display: grid;
     grid-area: 2 / 1 / 3 / 2;
     grid-template-columns: repeat(2, 1fr);
-}
+    align-items: center;
 
-.greetings-text-div {
-    display: grid;
-    grid-area: 1 / 2 / 2 / 3;
-    grid-template-rows: repeat(2, 1fr);
+    padding-right: 400px;
 }
 
 .header-buttons-div {
