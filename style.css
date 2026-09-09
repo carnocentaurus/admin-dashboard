@@ -79,12 +79,14 @@ main {
     grid-template-rows: repeat(2, 1fr);
 }
 
-main h1 {
-    justify-self: start;
-}
-
 .projects-container {
     display: grid;
     grid-area: 1 / 1 / 3 / 2;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.announcements-container {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 3;
+    grid-template-rows: repeat(3, 1fr);
 }
