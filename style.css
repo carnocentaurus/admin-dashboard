@@ -27,7 +27,7 @@ header {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.search-icon, .bell-icon {
+.search-icon, .bell-icon, .dashboard-icons {
     width: 20px;
 }
 
