@@ -171,10 +171,16 @@ header {
     grid-template-columns: repeat(2, min-content);
 
     padding-right: 50px;
+    margin-bottom: 15px;
 }
 
 .dashboard div:first-child {
     gap: 10px;
+    margin-bottom: 40px;
+}
+
+.dashboard div:nth-child(7) {
+    margin-bottom: 40px;
 }
 
 .dashboard div:not(:first-child) {
@@ -183,6 +189,11 @@ header {
 
 .main-dashboard-icon {
     width: 30px;
+}
+
+.dashboard-icons {
+    width: 20px;
+    height: 20px;
 }
 
 .dashboard-text {
