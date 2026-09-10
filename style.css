@@ -93,6 +93,11 @@ header {
     border-radius: 50%;
 }
 
+.my-profile-image:hover {
+    cursor: pointer;
+    border: 2px solid var(--reddish-brown);
+}
+
 .my-profile-image.small-image {
     width: 30px;
 }
