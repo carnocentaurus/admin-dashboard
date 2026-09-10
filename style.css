@@ -13,7 +13,7 @@
     --dark-taupe-color: #544e48;
     --near-dark: #181514;
     --chrome: #dbe2e9;
-    --reddish-brown: #9e4f42;
+    --deep-rust-red: #7a3b31;
 }
 
 * {
@@ -95,7 +95,7 @@ header {
 
 .my-profile-image:hover {
     cursor: pointer;
-    border: 2px solid var(--reddish-brown);
+    border: 2px solid var(--deep-rust-red);
 }
 
 .my-profile-image.small-image {
@@ -146,7 +146,7 @@ header {
     border: none;
     border-radius: 30px;
     color: var(--chrome);
-    background-color: var(--reddish-brown);
+    background-color: var(--deep-rust-red);
     padding: 8px 10px; 
 }
 
