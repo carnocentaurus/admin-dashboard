@@ -12,6 +12,8 @@
         hue-rotate(349deg) brightness(91%) contrast(84%);
     --dark-taupe-color: #544e48;
     --near-dark: #181514;
+    --chrome: #dbe2e9;
+    --reddish-brown: #9e4f42;
 }
 
 * {
@@ -53,7 +55,7 @@ header {
 
 .search-input {
     font-size: 0.9rem;
-    color: #dbe2e9;
+    color: var(--chrome);
     background-color: var(--dark-taupe-color);
     border-radius: 30px;
     border: none;
@@ -130,6 +132,22 @@ header {
     display: grid;
     grid-area: 2 / 2 / 3 / 3;
     grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    gap: 30px;
+}
+
+.header-buttons-div button {
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 30px;
+    color: var(--chrome);
+    background-color: var(--reddish-brown);
+    padding: 8px 10px; 
+}
+
+.header-buttons-div button:hover {
+    background-color: var(--dark-taupe-color);
+    cursor: pointer;
 }
 
 .dashboard {
