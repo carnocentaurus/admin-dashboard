@@ -21,7 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid #000;  */
+    /* border: 1px solid #000; */
 }
 
 body {
@@ -163,13 +163,22 @@ header {
     grid-area: 1 / 1 / 3 / 2;
 
     padding: 20px;
+    height: min-content;
 }
 
 .dashboard div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, min-content);
 
     padding-right: 50px;
+}
+
+.dashboard div:first-child {
+    gap: 10px;
+}
+
+.dashboard div:not(:first-child) {
+    gap: 20px;
 }
 
 .main-dashboard-icon {
