@@ -161,6 +161,24 @@ header {
 .dashboard {
     display: grid;
     grid-area: 1 / 1 / 3 / 2;
+
+    padding: 20px;
+}
+
+.dashboard div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding-right: 50px;
+}
+
+.main-dashboard-icon {
+    width: 30px;
+}
+
+.dashboard-text {
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 main {
