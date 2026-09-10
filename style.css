@@ -190,6 +190,10 @@ header {
     gap: 20px;
 }
 
+.dashboard div:last-child {
+    margin-bottom: 100vh;
+}
+
 .dashboard div img {
     filter: brightness(0) saturate(100%) invert(96%) sepia(21%) saturate(3795%) 
         hue-rotate(179deg) brightness(111%) contrast(82%);
