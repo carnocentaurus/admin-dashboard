@@ -21,7 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid #000; 
+    /* border: 1px solid #000;  */
 }
 
 body {
@@ -35,13 +35,13 @@ header {
     grid-area: 1 / 2 / 2 / 3;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    align-items: center;
 
-    height: 150px;
-    padding: 20px 30px;
-    gap: 30px;
+    height: 100%;
+    padding: 0 30px;
 
     background-color: var(--chrome);
-    box-shadow: 2px 2px 3px var(--dark-taupe-color);
+    filter: drop-shadow(2px 2px 1px var(--dark-taupe-color));
 }
 
 .search-div {
@@ -224,8 +224,10 @@ main {
     grid-area: 2 / 2 / 3 / 3;
     grid-template-columns: 3fr 1fr;
 
-    height: 100vh;
+    height: 100%;
     padding: 20px;
+
+    background-color: var(--chrome);
 }
 
 .projects-container {
