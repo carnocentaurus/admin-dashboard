@@ -269,6 +269,10 @@ main {
     display: grid;
     grid-area: 1 / 1 / 2 / 2;
     grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+
+    padding: 20px;
+    height: min-content;
 }
 
 .trending-container {
