@@ -259,19 +259,6 @@ main {
     width: 20px;
 }
 
-.announcements-container {
-    display: grid;
-    grid-area: 1 / 2 / 2 / 3;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-.trending-div {
-    display: grid;
-    grid-area: 2 / 2 / 3 / 3;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
-
 .user-profile-image {
     width: 20px;
 }
