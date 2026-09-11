@@ -226,7 +226,7 @@ main {
     grid-template-rows: repeat(2, 1fr);
 
     height: 100vh;
-    padding: 30px;
+    padding: 20px;
 }
 
 .projects-container {
@@ -234,10 +234,27 @@ main {
     grid-area: 1 / 1 / 3 / 2;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
     row-gap: calc(100vh / 3);
+    align-content: space-between;
 
     height: min-content;
-    padding-right: 30px;
+    padding-right: 20px;
+}
+
+.projects-div {
+    display: grid;
+    row-gap: 30px;
+
+    height: 100%;
+    padding: 20px;
+}
+
+.project-icons-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: end;
+    gap: 20px;
 }
 
 .project-icons {
