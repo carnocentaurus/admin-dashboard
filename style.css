@@ -10,10 +10,14 @@
 :root {
     --dark-taupe-filter: brightness(0) saturate(100%) invert(29%) sepia(10%) saturate(509%) 
         hue-rotate(349deg) brightness(91%) contrast(84%);
+    --chrome-filter: brightness(0) saturate(100%) invert(96%) sepia(21%) saturate(3795%) 
+        hue-rotate(179deg) brightness(111%) contrast(82%);
+    --reddish-brown-filter: brightness(0) saturate(100%) invert(32%) sepia(32%) saturate(944%) 
+        hue-rotate(321deg) brightness(103%) contrast(88%);
     --dark-taupe-color: #544e48;
-    --near-dark: #181514;
     --chrome: #dbe2e9;
     --deep-rust-red: #7a3b31;
+    --near-dark: #181514;
 }
 
 * {
@@ -78,7 +82,8 @@ header {
     background-color: #666a6d;
 }
 
-.bell-icon, .dashboard-icons {
+.bell-icon, 
+.dashboard-icons {
     width: 20px;
 }
 
@@ -118,7 +123,8 @@ header {
     font-size: 0.9rem;
 }
 
-.my-username.small-username {
+.my-username.small-username,
+.project-description {
     font-size: 1rem;
 }
 
@@ -195,8 +201,7 @@ header {
 }
 
 .dashboard div img {
-    filter: brightness(0) saturate(100%) invert(96%) sepia(21%) saturate(3795%) 
-        hue-rotate(179deg) brightness(111%) contrast(82%);
+    filter: var(--chrome-filter);
 }
 
 .dashboard div a:hover {
@@ -248,6 +253,11 @@ main {
 
     height: 100%;
     padding: 20px;
+    border-radius: 10px;
+
+    color: var(--chrome);
+    background-color: var(--dark-taupe-color);
+    border-left: 7px solid var(--deep-rust-red);
 }
 
 .project-icons-div {
@@ -259,6 +269,12 @@ main {
 
 .project-icons {
     width: 20px;
+    filter: var(--chrome-filter);
+}
+
+.project-icons:hover {
+    cursor: pointer;
+    filter: var(--reddish-brown-filter);
 }
 
 .right-side-content-container {
