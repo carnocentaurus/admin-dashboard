@@ -292,6 +292,19 @@ main {
     row-gap: 20px;
 
     padding: 20px;
+    border-radius: 10px;
+
+    color: var(--chrome);
+    background-color: var(--dark-taupe-color);
+}
+
+.announcements-div:not(:last-child) {
+    border-bottom: 1px solid var(--chrome);
+    padding-bottom: 20px;
+}
+
+.announcement-description {
+    font-size: 0.8rem;
 }
 
 .trending-container {
