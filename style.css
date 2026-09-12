@@ -61,6 +61,13 @@ header {
     height: 25px;
 }
 
+.search-icon:hover,
+.bell-icon:hover,
+.project-icons:hover {
+    cursor: pointer;
+    filter: var(--reddish-brown-filter);
+}
+
 .search-input {
     font-size: 0.9rem;
     color: var(--chrome);
@@ -271,11 +278,6 @@ main {
 .project-icons {
     width: 20px;
     filter: var(--chrome-filter);
-}
-
-.project-icons:hover {
-    cursor: pointer;
-    filter: var(--reddish-brown-filter);
 }
 
 .right-side-content-container {
