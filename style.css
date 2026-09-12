@@ -18,6 +18,8 @@
     --chrome: #dbe2e9;
     --deep-rust-red: #7a3b31;
     --near-dark: #181514;
+    --nevada: #666a6d;
+    --silver: #c0c0c0;
 }
 
 * {
@@ -87,7 +89,7 @@ header {
 
 .search-input:hover {
     cursor: pointer;
-    background-color: #666a6d;
+    background-color: var(--nevada);
 }
 
 .bell-icon, 
@@ -243,6 +245,10 @@ main {
     background-color: var(--chrome);
 }
 
+main p:not(.username) {
+    color: var(--silver);
+}
+
 .projects-container {
     display: grid;
     grid-area: 1 / 1 / 3 / 2;
@@ -350,8 +356,4 @@ main {
 .trending-text-div p:hover {
     cursor: pointer;
     color: #B36456;
-}
-
-.user-project-name {
-    color: #b9bbb6;
 }
