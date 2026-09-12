@@ -303,7 +303,8 @@ main {
     padding-bottom: 20px;
 }
 
-.announcement-description {
+.announcement-description,
+.trending-text-div p {
     font-size: 0.8rem;
 }
 
@@ -314,7 +315,11 @@ main {
     grid-template-rows: repeat(4, 1fr);
 
     padding: 20px;
+    border-radius: 10px;
     min-height: 100%;
+
+    color: var(--chrome);
+    background-color: var(--dark-taupe-color);
 }
 
 .trending-images-div {
@@ -331,8 +336,9 @@ main {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 20px;
+    align-items: center;
 }
 
-.trending-text-div p {
-    font-size: 0.8rem;
+.user-project-name {
+    opacity: 80%;
 }
