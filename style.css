@@ -299,6 +299,15 @@ main p:not(.username) {
 .announcements-container {
     display: grid;
     grid-area: 1 / 1 / 2 / 2;
+    gap: 10px;
+}
+
+.announcements-container h3 {
+    color: var(--dark-taupe);
+}
+
+.announcements-div-container {
+    display: grid;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 20px;
 
