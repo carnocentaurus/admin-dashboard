@@ -49,8 +49,9 @@ header {
 }
 
 .search-div {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    column-gap: 20px;
 }
 
 .search-icon,
